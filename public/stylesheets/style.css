@@ -56,6 +56,10 @@ nav {
     font-size: 20px;
     
 }
+.nav {
+    font-weight: bold;
+    padding-right: 40px;
+}
 a {
     text-decoration: none;
     color: rgb(231, 241, 255);
@@ -119,6 +123,9 @@ footer {
     transition: background-color .1s;
     cursor: pointer;
     border-radius: 5px;
+    width: 100px;
+    height: 30px;
+    font-size: medium;
   }
   
   button:hover {
@@ -178,12 +185,6 @@ footer {
       width: 200px;
       background-color: rgb(243, 248, 255);
   }
-
-  button {
-      width: 100px;
-      height: 30px;
-      font-size: medium;
-  }
   
   .btn-no-style {
     background: none;
@@ -191,7 +192,7 @@ footer {
     padding: 0;
     cursor: pointer;
     text-decoration: none;
-    color: #225ca3;
+    color:rgb(231, 241, 255);
     font-size: 100%;
     font-weight: bold;
     transition: color .1s;
@@ -200,7 +201,7 @@ footer {
   
   .btn-no-style:hover {
     background: none;
-    color: #3486eb;
+    color: #72acf3;
   }
   
   .delete-post-btn {
