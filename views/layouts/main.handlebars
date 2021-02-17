@@ -15,9 +15,12 @@
         <nav>
             <a class="nav" href="/">Home</a>
             <a class="nav" href="/dashboard">Dashboard</a>
+            {{#if loggedIn}}
             <a class="nav" id="logout" href="/">Log Out</a>
+            {{else}}
             <a class="nav" href="/login">Log In</a>
             <a class="nav" href="/signup">Sign Up</a>
+            {{/if}}
         </nav>
 
         <div class="header-title">
@@ -34,7 +37,9 @@
       Thanks for visiting!
     </footer>
   </div>
+{{#if loggedIn}}
 <script src="/javascript/logout.js"></script>
+{{/if}}
 </body>
 
 </html>
