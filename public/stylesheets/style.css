@@ -152,8 +152,9 @@ footer {
   }
   
   textarea {
-    min-width: 80%;
+    min-width: 90%;
     min-height: 100px;
+    background-color: rgb(243, 248, 255);
   }
 
   form {
