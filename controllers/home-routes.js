@@ -1,6 +1,7 @@
 const router = require('express').Router();
 const sequelize = require('../config/connection');
 const { Post, User, Comment } = require('../models');
+const withAuth = require('../utils/auth');
 
 router.get('/', (req, res) => {
     Post.findAll({
@@ -97,8 +98,10 @@ router.get('/', (req, res) => {
         res.status(500).json(err);
       });
   });
-router.get('/new', (req, res) => {
-    res.render('new', { loggedIn: true });
+
+
+router.get('/new', withAuth, (req, res) => {
+  res.render('new-post', { loggedIn: true });
 });
 
 module.exports = router;

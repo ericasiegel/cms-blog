@@ -248,3 +248,7 @@ footer {
   .edit-post-form {
     margin-bottom: 5%;
   }
+
+  .link {
+    color: black;
+}
