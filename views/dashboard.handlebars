@@ -23,7 +23,9 @@
   <ol>
     {{#each posts as |post|}}
     <li>
-      {{> post-info post}}
+      <a href="/post/{{post.id}}">
+        {{> post-info post}}
+      </a>
       {{!-- edit post button --}}
       <a href="/dashboard/edit/{{post.id}}" class="edit-link"><button>Edit Post</button></a>
     </li>

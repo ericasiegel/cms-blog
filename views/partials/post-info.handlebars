@@ -1,16 +1,18 @@
 {{!-- post info script --}}
-<a href="/post/{{id}}">
+
     <article class="post">
         <div class="title">
             <p class="title-content">
                 {{ title }}
             </p>
             <div>
-                created by <i>{{ user.username }}</i> at {{format_date created_at }}
+                created by <i>{{ user.username }}</i> at {{format_date created_at }} 
+                <br/>
+                {{comments.length}} {{format_plural "comment" comments.length}}
             </div>
         </div>
         <div class="meta">
                 {{ content }}
         </div>
     </article>
-</a>
+

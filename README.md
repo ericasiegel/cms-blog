@@ -7,7 +7,7 @@
 ## Description
 The Tech Blog is a MySQL CMS-Style blog site, It was developed using the MVC (Model View Controller) paradigm in it's architectural structure, Handlebars.js, Sequelize, and Express-Sessions.
 
-The Tech Blog gives users a place where they can discuss with other users technical concepts, recent advancements, new technologies, etc. Users can create their own accounts, create edit and delete posts, and comment on other user's posts.
+The Tech Blog gives users a place where they can discuss with other users technical concepts, recent advancements, new technologies, etc. Users can create their own accounts, create edit and delete posts, and comment on other user's posts. If you are not signed in to use the site you are still able to view all of the blog posts and their comments, but you can not add a post or comment.
 
 
 ## Table of Contents
@@ -24,19 +24,11 @@ The Tech Blog gives users a place where they can discuss with other users techni
 
 ## Features
     
-- MySQL Database
-      
-- Express-Sessions
-      
-- Node.js
-      
-- Handlebars
-      
-- bcrypt
-      
-- dotenv
-      
-- Sequelize
+- User Interface
+- Create a Blog Post
+- Edit and Delete a Blog Post
+- Add Comments to a Blog Post
+- View Posts and Comments Even if Not Signed In
 
 ## Languages
 
@@ -52,7 +44,7 @@ JavaScript, HTML, CSS, Node, Sequelize, MySQL, Express, Express-Sessions, Handle
 
 ## Usage
 
-The Tech Blog is a place where people in the Tech industry can come together and discuss new avancements in technologies, concepts, issues/solutions, etc. The can create their own posts, edit them, and comment on other posts.
+The Tech Blog is a place where people in the Tech industry can come together and discuss new avancements in technologies, concepts, issues/solutions, etc. The can create their own posts, edit them, and comment on other posts. If the user is not logged in, they can still see the posts and comments.
 
 ### App Instructions
     
@@ -75,7 +67,11 @@ The Tech Blog is a place where people in the Tech industry can come together and
 ### Main Page
 ![The Tech Blog main page](./assets/images/main.png)
 
-      
+
+### Single Post View When Not Signed In
+![Single Post View When Not Signed In](./assets/images/notsignedin.png)
+
+
 ### Sign Up Page
 ![The Tech Blog Signup Page](./assets/images/signup.png)
 
