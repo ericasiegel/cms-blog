@@ -1,3 +1,4 @@
+/* Main page scripts */
 * {
     box-sizing: border-box;
 }
@@ -18,55 +19,73 @@ main {
     justify-content: center;
   }
 
+/* Center objects on the page */
 .box {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
+/* Header Styles */
 header {
     padding: 30px;
     text-align: left;
     background-color: rgb(68, 108, 160); 
 }
+.header-title {
+  border: 2px;
+  border-radius: 5px;
+  border-color: rgb(231, 241, 255);
+  background-color:rgb(231, 241, 255);
+  padding: 5px;
+  width: 300px;
+  text-align: center;
+}
 .nav_bar {
     font-size: medium;
     color: rgb(231, 241, 255);
 }
-.header-title {
-    border: 2px;
-    border-radius: 5px;
-    border-color: rgb(231, 241, 255);
-    background-color:rgb(231, 241, 255);
-    padding: 5px;
-    width: 300px;
-    text-align: center;
+nav {
+  padding-bottom: 20px;
+  color: rgb(231, 241, 255);
+  font-size: 20px;
+  
 }
+.nav {
+  font-weight: bold;
+  padding-right: 40px;
+}
+
+/* Text Styles */
 h1 {
     font-size: 40px;
 }
+a {
+  text-decoration: none;
+  color: rgb(231, 241, 255);
+  
+}
+a:hover {
+  color: #72acf3;
+}
+.meta {
+  padding: 10px;
+  text-decoration: none;
+  color: black;
+}
+.link {
+  color: black;
+}
+i {
+  font-size: larger;
+}
+
+
+/* Post Styles */
 .post-list {
     margin: 0;
     padding: 0;
     text-decoration: none;
-  }
-nav {
-    padding-bottom: 20px;
-    color: rgb(231, 241, 255);
-    font-size: 20px;
-    
-}
-.nav {
-    font-weight: bold;
-    padding-right: 40px;
-}
-a {
-    text-decoration: none;
-    color: rgb(231, 241, 255);
-    
-}
-a:hover {
-    color: #72acf3;
   }
 .post {
     padding-bottom: 10px;
@@ -80,13 +99,6 @@ a:hover {
 .post-single {
     width: 100%;
 }
-
-.meta {
-    padding: 10px;
-    text-decoration: none;
-    color: black;
-}
-
 .title {
     background-color: rgb(68, 108, 160);
     color: rgb(231, 241, 255);
@@ -96,11 +108,9 @@ a:hover {
     justify-content: space-between;
     align-items: center;
 }
-
 .title-content {
     font-size: 20px;
 }
-  
 .post .title span {
     font-style: italic;
     font-size: 30px;
@@ -109,15 +119,13 @@ a:hover {
 li {
     list-style: none;
 }
-footer {
-    border-top: 1px solid #ccc;
-    display: flex;
-    justify-content: center;
-    padding: 1%;
-    font-size: 110%;
-  }
+.post-list {
+  margin: 0;
+  padding: 0;
+}
 
-  button {
+/* button styles */
+button {
     background-color: #225ca3;
     border: 0;
     padding: 1%;
@@ -129,130 +137,115 @@ footer {
     width: 150px;
     height: 30px;
     font-size: medium;
-  }
-  
-  button:hover {
+}
+button:hover {
     background-color: #3486eb;
-  }
+}
+.btn-no-style {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  text-decoration: none;
+  color:rgb(231, 241, 255);
+  font-size: 100%;
+  font-weight: bold;
+  transition: color .1s;
+  margin-left: 16px;
+}
+
+.btn-no-style:hover {
+  background: none;
+  color: #72acf3;
+}
+
+.delete-post-btn {
+  background-color: #d41414;
+}
+
+.delete-post-btn:hover {
+  background-color: #ff643d;
+}
+.edit-link {
+  display: block;
+  margin: -1.5% 0 2% 0;
+}
   
-  .post-list {
-    margin: 0;
-    padding: 0;
-  }
+/* Form Styles */
   
-  textarea, input {
+textarea, input {
     padding: .5%;
     border-radius: 5px;
     border: 1px solid #ccc;
-  }
-  
-  textarea:focus, input:focus {
+}
+textarea:focus, input:focus {
     outline: none;
     border: 1px solid #3486eb;
-  }
-  
-  textarea {
+}
+textarea {
     min-width: 90%;
     min-height: 100px;
     background-color: rgb(243, 248, 255);
-  }
-
-  form {
+}
+form {
     background-color: rgb(231, 241, 255);
     border: 2px solid rgb(68, 108, 160);
     text-decoration: none;
     filter: drop-shadow(16px 16px 2px rgb(68, 108, 160));
     width: 400px;
-  }
-
-  .form-title {
+}
+.form-title {
     background-color: rgb(68, 108, 160);
     color: rgb(237, 243, 250);
     padding: 10px;
     margin: 0;
     text-align: center;
-  }
-  .form-content {
+}
+.form-content {
     padding: 20px;
     display: block;
     text-align: center;
-  }
-  form div {
+}
+form div {
       padding: 10px;
-  }
-  form label {
+}
+form label {
     display: block;
-  }
-
-  form input {
+}
+form input {
       height: 35px;
       min-width: 90%;
       background-color: rgb(243, 248, 255);
-  }
-
-i {
-    font-size: larger;
 }
-  
-  .btn-no-style {
-    background: none;
-    border: none;
-    padding: 0;
-    cursor: pointer;
-    text-decoration: none;
-    color:rgb(231, 241, 255);
-    font-size: 100%;
-    font-weight: bold;
-    transition: color .1s;
-    margin-left: 16px;
-  }
-  
-  .btn-no-style:hover {
-    background: none;
-    color: #72acf3;
-  }
-  
-  .delete-post-btn {
-    background-color: #d41414;
-  }
-  
-  .delete-post-btn:hover {
-    background-color: #ff643d;
-  }
-
-  
-  .edit-link {
-    display: block;
-    margin: -1.5% 0 2% 0;
-  }
-  
-  .comment-form {
+.comment-form {
     margin-bottom: 5%;
-  }
-  
-  .comment {
+}
+.new-post-form input {
+  width: 300px;
+}
+.edit-post-form {
+  margin-bottom: 5%;
+}
+
+/* Comment Styles */
+.comment {
     padding: 1%;
     margin-bottom: 1%;
-  }
-  
-  .comment:nth-child(odd) {
+} 
+.comment:nth-child(odd) {
     background-color: rgb(243, 248, 255);
-  }
-  
-  .comment .meta {
+}
+.comment .meta {
     font-size: 90%;
     margin-bottom: .5%;
     opacity: .6;
   }
-  
-  .new-post-form input {
-    width: 300px;
-  }
-  
-  .edit-post-form {
-    margin-bottom: 5%;
-  }
+/* footer styles */
 
-  .link {
-    color: black;
+footer {
+  border-top: 1px solid #ccc;
+  display: flex;
+  justify-content: center;
+  padding: 1%;
+  font-size: 110%;
 }

@@ -1,6 +1,11 @@
+{{!-- This is the page showing a single blog post --}}
+
+{{!-- Show selected blog post --}}
 <div class="post-single">
     {{> post-info post }}
 </div>
+
+{{!-- if the user is logged in this comment form will be shown --}}
 {{#if loggedIn}}
 <div class="box">
     <form class="comment-form">
@@ -19,7 +24,11 @@
     </form>
 </div>
 {{/if}}
-    {{> comments post.comments}}
+
+{{!-- Show comments --}}
+{{> comments post.comments}}
+
+{{!-- if the user is logged in this javascript page will be active --}}
 {{#if loggedIn}}
 <script src="/javascript/comment.js"></script>
 {{/if}}

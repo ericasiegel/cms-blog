@@ -3,6 +3,7 @@ const sequelize = require('../config/connection');
 const { Post, User, Comment } = require('../models');
 const withAuth = require('../utils/auth');
 
+// get all of the posts and render the homepage
 router.get('/', (req, res) => {
     Post.findAll({
       attributes: [
@@ -38,9 +39,10 @@ router.get('/', (req, res) => {
         console.log(err);
         res.status(500).json(err);
       });
-  });
+});
 
-  router.get('/login', (req, res) => {
+// login route
+router.get('/login', (req, res) => {
     if (req.session.loggedIn) {
       res.redirect('/');
       return;
@@ -50,9 +52,10 @@ router.get('/', (req, res) => {
 
   router.get('/signup', (req, res) => {
     res.render('signup');
-  });
+});
 
-  router.get('/post/:id', (req, res) => {
+// get one post by it's id
+router.get('/post/:id', (req, res) => {
     Post.findOne({
       where: {
         id: req.params.id
@@ -97,9 +100,9 @@ router.get('/', (req, res) => {
         console.log(err);
         res.status(500).json(err);
       });
-  });
+});
 
-
+// new post route
 router.get('/new', withAuth, (req, res) => {
   res.render('new-post', { loggedIn: true });
 });

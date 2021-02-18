@@ -3,7 +3,7 @@ const sequelize = require('../config/connection');
 const { Post, User, Comment } = require('../models');
 const withAuth = require('../utils/auth');
 
-
+// get all posts belinging to the signed in user
 router.get('/', withAuth, (req, res) => {
     Post.findAll({
       where: {
@@ -42,6 +42,7 @@ router.get('/', withAuth, (req, res) => {
       });
 });
 
+// edit the post route belinging to logged in user
 router.get('/edit/:id', withAuth, (req, res) => {
   Post.findOne({
     where: {

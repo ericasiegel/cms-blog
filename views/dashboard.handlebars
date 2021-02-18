@@ -1,3 +1,6 @@
+{{!-- dashboard page --}}
+
+{{!-- added dashboard styles --}}
 <style>
   button {
     height: 40px;
@@ -9,9 +12,11 @@
   }
 </style>
 <div class="box">
+  {{!-- the button for a new post --}}
 <a href="/new"><button>New Post</button></a>
 </div>
 <br/>
+{{!-- show the user's active posts --}}
 {{#if posts.length}}
 <section>
   <h2>Your Posts</h2>
@@ -19,6 +24,7 @@
     {{#each posts as |post|}}
     <li>
       {{> post-info post}}
+      {{!-- edit post button --}}
       <a href="/dashboard/edit/{{post.id}}" class="edit-link"><button>Edit Post</button></a>
     </li>
     {{/each}}

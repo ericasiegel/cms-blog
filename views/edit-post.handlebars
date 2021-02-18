@@ -1,5 +1,9 @@
+{{!-- Edit Post --}}
+
+
 <article>
     <div class="box">
+        {{!-- back to dashboard link --}}
         <a class="link" href="/dashboard"> &larr; Back to dashboard</a>
     </div>
     <br/>
@@ -9,6 +13,7 @@
     </div>
     <br/>
     <div class="box">
+        {{!-- edit post form --}}
         <form class="edit-post-form">
             <div class="form-title">
                 <h2>Edit Post</h2>
@@ -33,7 +38,7 @@
         </form>
     </div>
 </article>
-
+{{!-- comment on edit post form --}}
 <div class="box">
     <form class="comment-form">
         <div class="form-title">
@@ -50,9 +55,10 @@
         </div>
     </form>
 </div>
-
+{{!-- show comments for the individual post --}}
 {{> comments post.comments}}
 
+{{!-- Script pages --}}
 <script src="/javascript/edit-post.js"></script>
 <script src="/javascript/delete-post.js"></script>
 <script src="/javascript/comment.js"></script>

@@ -37,9 +37,6 @@ The Tech Blog gives users a place where they can discuss with other users techni
 - dotenv
       
 - Sequelize
-      
-  
-  
 
 ## Languages
 
