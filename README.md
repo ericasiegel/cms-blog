@@ -45,7 +45,7 @@ JavaScript, HTML, CSS, Node, Sequelize, MySQL, Express, Express-Sessions, Handle
 
 ## Link 
 
-[The Tech Blog Deployed Page](https://es-tech-blog.herokuapp.com/)
+[The Tech Blog Deployed Page](https://cms-blog-db.herokuapp.com/)
 
 [The Tech Blog GitHub](https://github.com/ericasiegel/cms-blog.git)
 
