@@ -3,7 +3,9 @@
         <p class="title-content">
             {{ title }}
          </p>
-        created by {{ user.username }} at {{format_date created_at }}
+         <div>
+             created by <i>{{ user.username }}</i> at {{format_date created_at }}
+         </div>
     </div>
     <div class="meta">
             {{ content }}

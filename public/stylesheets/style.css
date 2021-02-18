@@ -186,9 +186,13 @@ footer {
 
   form input {
       height: 35px;
-      width: 200px;
+      min-width: 90%;
       background-color: rgb(243, 248, 255);
   }
+
+i {
+    font-size: larger;
+}
   
   .btn-no-style {
     background: none;
