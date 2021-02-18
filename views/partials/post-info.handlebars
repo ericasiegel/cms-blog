@@ -1,14 +1,16 @@
 {{!-- post info script --}}
-<article class="post">
-    <div class="title">
-        <p class="title-content">
-            {{ title }}
-         </p>
-         <div>
-             created by <i>{{ user.username }}</i> at {{format_date created_at }}
-         </div>
-    </div>
-    <div class="meta">
-            {{ content }}
-    </div>
-</article>
+<a href="/post/{{post.id}}">
+    <article class="post">
+        <div class="title">
+            <p class="title-content">
+                {{ title }}
+            </p>
+            <div>
+                created by <i>{{ user.username }}</i> at {{format_date created_at }}
+            </div>
+        </div>
+        <div class="meta">
+                {{ content }}
+        </div>
+    </article>
+</a>
