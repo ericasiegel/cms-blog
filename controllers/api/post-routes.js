@@ -1,5 +1,6 @@
 const router = require('express').Router();
 const { User, Post, Comment } = require('../../models');
+const { drop } = require('../../models/Post');
 const withAuth = require('../../utils/auth');
 
 // get all posts
