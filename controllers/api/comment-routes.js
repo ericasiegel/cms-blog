@@ -37,16 +37,16 @@ router.delete('/:id', withAuth, (req, res) => {
             id: req.params.id
         }
     })
-    .then(dbPostData => {
-        if (!dbPostData) {
-          res.status(404).json({ message: 'No comment found with this id' });
-          return;
-        }
-        res.json(dbPostData);
+    .then(dbCommentData => {
+      if (!dbCommentData) {
+        res.status(404).json({ message: 'No comment found with this id!' });
+        return;
+      }
+      res.json(dbCommentData);
     })
     .catch(err => {
-        console.log(err);
-        res.status(500).json(err);
+      console.log(err);
+      res.status(500).json(err);
     });
 });
 
